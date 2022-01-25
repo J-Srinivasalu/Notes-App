@@ -11,10 +11,9 @@
 	</ul>
 </p>
 # Screenshots
-
-![screenshot1](Screenshots/Screenshot_20220125-105218519.jpg)
-![screenshot2](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105223023.jpg)
-![screenshot3](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105233176.jpg)
-![screenshot4](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105240704.jpg)
-![screenshot5](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105311924.jpg)	
+<img src = "Screenshots/Screenshot_20220125-105218519.jpg" width=108 height=216>
+<img src = "Screenshots/Screenshot_20220125-105223023.jpg" width=108 height=216>
+<img src = "Screenshots/Screenshot_20220125-105233176.jpg" width=108 height=216>
+<img src = "Screenshots/Screenshot_20220125-105240704.jpg)" width=108 height=216>
+<img src = "Screenshots/Screenshot_20220125-105311924.jpg" width=108 height=216>	
 
