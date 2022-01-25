@@ -12,9 +12,9 @@
 </p>
 # Screenshots
 <p>
-<img src = "Screenshots/Screenshot_20220125-105218519.jpg" width=108 height=216>
-<img src = "Screenshots/Screenshot_20220125-105223023.jpg" width=108 height=216>
-<img src = "Screenshots/Screenshot_20220125-105233176.jpg" width=108 height=216>
-<img src = "Screenshots/Screenshot_20220125-105240704.jpg" width=108 height=216>
-<img src = "Screenshots/Screenshot_20220125-105311924.jpg" width=108 height=216>	
+<img src = "Screenshots/Screenshot_20220125-105218519.jpg" width=108*2 height=216*2>
+<img src = "Screenshots/Screenshot_20220125-105223023.jpg" width=108*2 height=216*2>
+<img src = "Screenshots/Screenshot_20220125-105233176.jpg" width=108*2 height=216*2>
+<img src = "Screenshots/Screenshot_20220125-105240704.jpg" width=108*2 height=216*2>
+<img src = "Screenshots/Screenshot_20220125-105311924.jpg" width=108*2 height=216*2>	
 <p>
