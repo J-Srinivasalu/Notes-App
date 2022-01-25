@@ -1,6 +1,6 @@
 # Notes
 <p>
-	Notes is a notetaking app\n
+	Notes is a notetaking app<br/>
 	Notes are a great way to keep track of information for yourself.
 	Basic opertions/features availble:
 	<ul>
@@ -11,9 +11,13 @@
 	</ul>
 </p>
 # Screenshots
-![screenshot1](Screenshots/Screenshot_20220125-105218519.jpg)
-![screenshot2](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105223023.jpg)
-![screenshot3](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105233176.jpg)
-![screenshot4](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105240704.jpg)
-![screenshot5](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105311924.jpg)
+<p>
+	
+	![screenshot1](Screenshots/Screenshot_20220125-105218519.jpg)
+	![screenshot2](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105223023.jpg)
+	![screenshot3](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105233176.jpg)
+	![screenshot4](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105240704.jpg)
+	![screenshot5](https://github.com/J-Srinivasalu/Notes-App/blob/main/Screenshots/Screenshot_20220125-105311924.jpg)
+	
+</p>
 
