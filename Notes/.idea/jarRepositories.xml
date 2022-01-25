@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_gradle-6.7.1" />
+      <option name="name" value="injected_offline_gradle-6.7.1" />
+      <option name="url" value="file:/C:/Users/venkat%20laxmi/.android/manual-offline-m2/gradle-6.7.1/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_android-gradle-plugin-3.5.0-beta01" />
+      <option name="name" value="injected_offline_android-gradle-plugin-3.5.0-beta01" />
+      <option name="url" value="file:/C:/Users/venkat%20laxmi/.android/manual-offline-m2/android-gradle-plugin-3.5.0-beta01/" />
+    </remote-repository>
+  </component>
+</project>
