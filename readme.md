@@ -10,11 +10,14 @@
 		<li>Timestamp of last update</li>
 	</ul>
 </p>
-# Screenshots
-<p>
-<img src = "Screenshots/Screenshot_20220125-105218519.jpg" width=108*2 height=216*2>
-<img src = "Screenshots/Screenshot_20220125-105223023.jpg" width=108*2 height=216*2>
-<img src = "Screenshots/Screenshot_20220125-105233176.jpg" width=108*2 height=216*2>
-<img src = "Screenshots/Screenshot_20220125-105240704.jpg" width=108*2 height=216*2>
-<img src = "Screenshots/Screenshot_20220125-105311924.jpg" width=108*2 height=216*2>	
-<p>
+<h1>Screenshots</h1>
+<hr>
+<p align="center">
+<img src = "Screenshots/Screenshot_20220125-105218519.jpg" width=216> &nbsp;
+<img src = "Screenshots/Screenshot_20220125-105223023.jpg" width=216>&nbsp;
+<img src = "Screenshots/Screenshot_20220125-105233176.jpg" width=216>
+	</p>
+	<p  align="center">
+<img src = "Screenshots/Screenshot_20220125-105240704.jpg" width=216>&nbsp;
+<img src = "Screenshots/Screenshot_20220125-105311924.jpg" width=216></p>
+
