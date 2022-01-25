@@ -1,4 +1,4 @@
-#Notes
+# Notes
 <p>
 	Notes is a notetaking app\n
 	Notes are a great way to keep track of information for yourself.
@@ -10,5 +10,5 @@
 		<li>Timestamp of last update</li>
 	</ul>
 </p>
-#Screenshots
+# Screenshots
 
