@@ -1,18 +1,24 @@
 package js.projects.notes;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -21,12 +27,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     Context context;
     Activity activity;
-    ArrayList<NotesModel> notesModel;
+    RelativeLayout view;
+    ArrayList<NotesModel> notes;
 
-    public NotesAdapter(Context context, Activity activity, ArrayList<NotesModel> notesModel) {
+    public NotesAdapter(Context context, Activity activity, ArrayList<NotesModel> notesModel,
+                        RelativeLayout view) {
         this.context = context;
         this.activity = activity;
-        this.notesModel = notesModel;
+        this.notes = notesModel;
+        this.view = view;
     }
 
 
@@ -57,8 +66,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NotesAdapter.NotesViewHolder holder, int position) {
-        NotesModel item = notesModel.get(position);
+    public void onBindViewHolder(@NonNull NotesAdapter.NotesViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        NotesModel item = notes.get(position);
         holder.title.setText(item.getTitle());
         holder.description.setText(item.getDescription());
         holder.timestamp.setText(item.getTimestamp());
@@ -66,7 +75,18 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         holder.delete.setOnClickListener(v->{
             Database db = new Database(context);
             removeItem(position);
-            db.deleteSingleItem(item.getId());
+            Snackbar snackbar =
+                    Snackbar.make(view,"Item Deleted", Snackbar.LENGTH_LONG).setAction("UNDO",
+                            v1 -> restoreItem(item, position)).addCallback(new BaseTransientBottomBar.BaseCallback<Snackbar>() {
+                        @Override
+                        public void onDismissed(Snackbar transientBottomBar, int event) {
+                            if(!(event == DISMISS_EVENT_ACTION)){
+                                db.deleteSingleItem(item.getId());
+                            }
+                        }
+                    });
+            snackbar.setActionTextColor(Color.BLUE);
+            snackbar.show();
         });
 
         holder.note.setOnClickListener(v->{
@@ -80,12 +100,16 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     @Override
     public int getItemCount() {
-        return notesModel.size();
+        return notes.size();
     }
 
     public void removeItem(int position) {
-        notesModel.remove(position);
+        notes.remove(position);
         notifyItemRemoved(position);
+    }
+    public void restoreItem(NotesModel item, int position) {
+        notes.add(position, item);
+        notifyItemInserted(position);
     }
 
 }

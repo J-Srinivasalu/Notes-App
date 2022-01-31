@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Git-Practice/Simple-Notes-App/Notes/app/src/main/res/layout/activity_main.xml" value="0.25833333333333336" />
+        <entry key="..\:/Git-Practice/Simple-Notes-App/Notes/app/src/main/res/layout/custom_note.xml" value="0.25833333333333336" />
         <entry key="..\:/android/Apps/Notes/app/src/main/res/drawable/add.xml" value="0.27447916666666666" />
         <entry key="..\:/android/Apps/Notes/app/src/main/res/drawable/delete.xml" value="0.27447916666666666" />
         <entry key="..\:/android/Apps/Notes/app/src/main/res/drawable/delete_blue.xml" value="0.27447916666666666" />

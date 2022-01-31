@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,22 +21,29 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<NotesModel> item = new ArrayList<>();
     FloatingActionButton add;
     Database database;
+    RelativeLayout mainLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         list = findViewById(R.id.list);
         add = findViewById(R.id.add);
+        mainLayout = findViewById(R.id.mainLayout);
 
         add.setOnClickListener(v-> startActivity(new Intent(this, AddNote.class)));
 
-        notesAdapter = new NotesAdapter(this,MainActivity.this, item);
+        notesAdapter = new NotesAdapter(this,MainActivity.this, item, mainLayout);
         database = new Database(this);
         fetchAllNotesFromDatabase();
 
         list.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
         list.setAdapter(notesAdapter);
+
+
+
     }
+
+
 
     private void fetchAllNotesFromDatabase() {
         Cursor cursor = database.readDatabase();
@@ -49,4 +57,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 }
