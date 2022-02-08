@@ -20,4 +20,13 @@
 	<p  align="center">
 <img src = "Screenshots/Screenshot_20220125-105240704.jpg" width=216>&nbsp;
 <img src = "Screenshots/Screenshot_20220125-105311924.jpg" width=216></p>
+<h1>Made with</h1>
+<hr>
+<p>
+	<ul>
+		<li>Java</li>
+		<li>SQLite Database</li>
+		<li>xml</li>
+	</ul>
+</p>
 
